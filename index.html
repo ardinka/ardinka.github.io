@@ -39,26 +39,13 @@
       overflow: hidden;
       box-shadow: 0 20px 40px rgba(0,0,0,0.4);
       border: 3px solid #d1b98f;
-      text-align: center; /* ensure inner img is centered */
+      text-align: center;
     }
 
-    .poster-placeholder,
     .poster-container img {
       width: 100%;
-      display: inline-block;
-    }
-
-    .poster-placeholder {
-      height: 800px;
-      background: linear-gradient(45deg, #184d62, #0a1f34);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #d1b98f;
-      font-size: 1.5rem;
-      text-align: center;
-      border: 2px dashed #d1b98f;
-      opacity: 0.7;
+      height: auto;
+      display: block;
     }
 
     @media (max-width: 768px) {
@@ -70,11 +57,6 @@
       .poster-container {
         max-width: 90%;
       }
-
-      .poster-placeholder {
-        height: 600px;
-        font-size: 1.2rem;
-      }
     }
   </style>
 </head>
@@ -82,14 +64,7 @@
   <h1 class="title">LIVE MUSIC</h1>
 
   <div class="poster-container">
-    <!-- Replace the div below with your actual poster image -->
-    <div class="poster-placeholder">
-      [INSERT POSTER IMAGE HERE]
-    </div>
-    <!-- Example of using an <img> centered -->
-    <!--
-    <img src="your-poster-image.jpg" alt="Music Concert Poster" />
-    -->
+    <img src="images/concert-poster.jpeg" alt="Live Music Concert Poster" />
   </div>
 </body>
 </html>
