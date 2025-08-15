@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Music Concert</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background: linear-gradient(135deg, #0a1f34 0%, #184d62 50%, #0a1f34 100%);
+      min-height: 100vh;
+      color: #d1b98f;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #d1b98f;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .poster-container {
+      max-width: 600px;
+      width: 100%;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+      border: 3px solid #d1b98f;
+      text-align: center; /* ensure inner img is centered */
+    }
+
+    .poster-placeholder,
+    .poster-container img {
+      width: 100%;
+      display: inline-block;
+    }
+
+    .poster-placeholder {
+      height: 800px;
+      background: linear-gradient(45deg, #184d62, #0a1f34);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #d1b98f;
+      font-size: 1.5rem;
+      text-align: center;
+      border: 2px dashed #d1b98f;
+      opacity: 0.7;
+    }
+
+    @media (max-width: 768px) {
+      .title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+      }
+
+      .poster-container {
+        max-width: 90%;
+      }
+
+      .poster-placeholder {
+        height: 600px;
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1 class="title">LIVE MUSIC</h1>
+
+  <div class="poster-container">
+    <!-- Replace the div below with your actual poster image -->
+    <div class="poster-placeholder">
+      [INSERT POSTER IMAGE HERE]
+    </div>
+    <!-- Example of using an <img> centered -->
+    <!--
+    <img src="your-poster-image.jpg" alt="Music Concert Poster" />
+    -->
+  </div>
+</body>
+</html>
